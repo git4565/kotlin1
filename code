@@ -1,0 +1,30 @@
+fun main() {
+    //первое задание
+    var amount = 5600f
+    var commition = amount*0.0075f
+    if (commition < 35f) commition = 35f
+    amount += commition
+    println("Сумма: $amount Комиссия: $commition")
+    //второе задание
+    val likes = 71
+    val lastDigit = likes % 10
+    if(lastDigit === 1)
+    {
+        println("Пост понравился $likes человеку.")
+    }
+    else
+    {
+        println("Пост понравился $likes людям.")
+    }
+    //третье задание
+    var purchaseAmount = 1200f
+    val buyingMounthly: Boolean = true
+    var sale = 0f
+    if(purchaseAmount > 1000f && purchaseAmount <= 10000f) sale +=100f
+    if(purchaseAmount > 10000f) sale += purchaseAmount*0.05f
+    purchaseAmount -= sale
+    sale = 0f
+    if(buyingMounthly) sale += purchaseAmount*0.01f
+    purchaseAmount -= sale
+    println("Сумма покупки: $purchaseAmount")
+}
